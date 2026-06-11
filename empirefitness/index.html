@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmpireFitness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+<header>
+  <h1>Treine em casa!!!</h1>
+  <p>Registre seus treinos diários</p>
+</header>
+
+<main>
+  <nav class="dias">
+    <button data-dia="segunda">Segunda</button>
+    <button data-dia="terca">Terça</button>
+    <button data-dia="quarta">Quarta</button>
+    <button data-dia="quinta">Quinta</button>
+    <button data-dia="sexta">Sexta</button>
+    <button data-dia="sabado">Sábado</button>
+    <button data-dia="domingo">Domingo</button>
+  </nav>
+
+  <section class="treino-container">
+
+    <div class="treino" id="segunda">
+      <h2>Segunda – Corpo Superior</h2>
+      <div class="exercicio"><input type="checkbox" id="segunda_flexao"><label for="segunda_flexao">Flexão de braço<br><small>4x12 • 60s</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="segunda_flexao_inclinada"><label for="segunda_flexao_inclinada">Flexão inclinada<br><small>3x12 • 60s</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="segunda_remada"><label for="segunda_remada">Remada invertida<br><small>3x12 • 60s</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="segunda_elevacao_lateral"><label for="segunda_elevacao_lateral">Elevação lateral com garrafa<br><small>3x15</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="segunda_rosca_biceps"><label for="segunda_rosca_biceps">Rosca bíceps com garrafa<br><small>3x15</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="segunda_triceps"><label for="segunda_triceps">Tríceps no banco<br><small>3x12</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="segunda_prancha"><label for="segunda_prancha">Prancha<br><small>3x40s</small></label></div>
+    </div>
+
+    <div class="treino" id="terca">
+      <h2>Terça – Pernas</h2>
+      <div class="exercicio"><input type="checkbox" id="terca_agachamento"><label for="terca_agachamento">Agachamento livre<br><small>4x15</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="terca_agachamento_sumo"><label for="terca_agachamento_sumo">Agachamento sumô<br><small>3x12</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="terca_afundo"><label for="terca_afundo">Afundo alternado<br><small>3x12 por perna</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="terca_panturrilha"><label for="terca_panturrilha">Elevação de panturrilha<br><small>4x20</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="terca_ponte"><label for="terca_ponte">Ponte de glúteos<br><small>3x15</small></label></div>
+    </div>
+
+    <div class="treino" id="quarta">
+      <h2>Quarta – Core e Cardio</h2>
+      <div class="exercicio"><input type="checkbox" id="quarta_abdominal"><label for="quarta_abdominal">Abdominal crunch<br><small>3x20</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="quarta_prancha"><label for="quarta_prancha">Prancha<br><small>3x45s</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="quarta_prancha_lateral"><label for="quarta_prancha_lateral">Prancha lateral<br><small>3x30s</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="quarta_burpee"><label for="quarta_burpee">Burpees<br><small>3x10</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="quarta_polichinelo"><label for="quarta_polichinelo">Polichinelos<br><small>3x30</small></label></div>
+    </div>
+
+    <div class="treino" id="quinta">
+      <h2>Quinta – Corpo Superior</h2>
+      <div class="exercicio"><input type="checkbox" id="quinta_flexao"><label for="quinta_flexao">Flexão de braço<br><small>4x12</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="quinta_remada"><label for="quinta_remada">Remada invertida<br><small>3x12</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="quinta_elevacao_lateral"><label for="quinta_elevacao_lateral">Elevação lateral<br><small>3x15</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="quinta_rosca_biceps"><label for="quinta_rosca_biceps">Rosca bíceps<br><small>3x15</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="quinta_triceps"><label for="quinta_triceps">Tríceps no banco<br><small>3x12</small></label></div>
+    </div>
+
+    <div class="treino" id="sexta">
+      <h2>Sexta – Pernas e Core</h2>
+      <div class="exercicio"><input type="checkbox" id="sexta_agachamento"><label for="sexta_agachamento">Agachamento sumô<br><small>3x15</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="sexta_afundo"><label for="sexta_afundo">Afundo com passo<br><small>3x12</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="sexta_prancha"><label for="sexta_prancha">Prancha<br><small>3x45s</small></label></div>
+    </div>
+
+    <div class="treino" id="sabado">
+      <h2>Sábado – Cardio Leve</h2>
+      <div class="exercicio"><input type="checkbox" id="sabado_pular_corda"><label for="sabado_pular_corda">Pular corda<br><small>10 min</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="sabado_corrida"><label for="sabado_corrida">Corrida leve<br><small>20 min</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="sabado_polichinelo"><label for="sabado_polichinelo">Polichinelos<br><small>3x30</small></label></div>
+    </div>
+
+    <div class="treino" id="domingo">
+      <h2>Domingo – Descanso Ativo</h2>
+      <div class="exercicio"><input type="checkbox" id="domingo_caminhada"><label for="domingo_caminhada">Caminhada leve<br><small>30 min</small></label></div>
+      <div class="exercicio"><input type="checkbox" id="domingo_alongamento"><label for="domingo_alongamento">Alongamentos<br><small>10 min</small></label></div>
+    </div>
+
+  </section>
+
+  <section class="observacoes">
+    <h2>📝 Observações do dia</h2>
+    <textarea id="observacoes" placeholder="Escreva algo sobre seu treino..."></textarea>
+    <button id="adicionarObs">Adicionar Observação</button>
+    <ul id="listaObservacoes"></ul>
+  </section>
+
+  <p id="mensagem"></p>
+</main>
+
+<footer>
+  <p>Consistência &gt; motivação 💪</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: #333;
+    line-height: 1.5;
+}
+
+header {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 24px 15px;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.dias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dias button {
+  flex: 1 1 120px;
+  padding: 10px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dias button.ativo-dia {
+  background: #005bb5;
+}
+
+.treino {
+  display: none;
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.treino.ativo {
+  display: block;
+}
+
+.treino h2 {
+  margin-bottom: 14px;
+  color: #1e90ff;
+}
+
+.exercicio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.exercicio:last-child {
+  border-bottom: none;
+}
+
+.exercicio input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.exercicio label {
+  cursor: pointer;
+}
+
+.exercicio small {
+  color: #666;
+}
+
+.observacoes {
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.observacoes h2 {
+  margin-bottom: 10px;
+  color: #1e90ff;
+}
+
+textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 10px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+button {
+  transition: 0.2s;
+}
+
+.observacoes button {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 9px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+#listaObservacoes {
+  list-style: none;
+  margin-top: 12px;
+}
+
+#listaObservacoes li {
+  background: #f1f1f1;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  word-break: break-word;
+}
+
+#listaObservacoes li button {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#mensagem {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sucesso {
+  color: green;
+}
+
+.erro {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  margin: 25px 0;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .exercicio {
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+.treino,
+.observacoes,
+.exportar-importar {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(5px);
+}
