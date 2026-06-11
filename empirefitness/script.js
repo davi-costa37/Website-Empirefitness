@@ -1,8 +1,8 @@
 const CONFIG = {
-  SUPABASE_URL: "https://ljfemrbimtwlsukcqieg.supabase.co",
-  SUPABASE_KEY: "sb_publishable_QGg8XWwZq7pz2j_P1ONhOw_lkNrFUOd",
-  TABELA_CHECKBOXES: "checkboxes_treino",
-  TABELA_OBSERVACOES: "observacoes_treino"
+  SUPABASE_URL: "",
+  SUPABASE_KEY: "",
+  TABELA_CHECKBOXES: "",
+  TABELA_OBSERVACOES: ""
 };
 
 const db = supabase.createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_KEY);
